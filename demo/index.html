@@ -1,66 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="dropdown.min.js" defer></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', (e) => {
+        dropdown({});
+      });
+    </script>
+    <title>Dropdown</title>
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="main.css">
-	<script src="dropdown.min.js" defer></script>
-	<title>Dropdown</title>
-</head>
+  <body>
+    <header class="header">
+      <h2 class="subtitle">The73756</h2>
+      <h1 class="title">Dropdown menu demo</h1>
+    </header>
+    <div class="container">
+      <div class="dropdown">
+        <button class="dropdown-toggle" data-dd-target="first" aria-label="Открыть выпадающее меню">
+          Dropdown button 1
+        </button>
+        <ul class="dropdown-menu" data-dd-path="first">
+          <li>
+            <a class="dropdown-menu__item" href="#1">Link 1</a>
+          </li>
+          <li>
+            <a class="dropdown-menu__item" href="#2">Link 2</a>
+          </li>
+          <li>
+            <input type="text" class="dropdown-menu__item" />
+          </li>
+        </ul>
+      </div>
 
-<body>
-	<header class="header">
-		<h2 class="subtitle">The73756</h2>
-		<h1 class="title">Dropdown menu demo</h1>
-	</header>
-	<div class="container">
-		<div class="dropdown">
-			<button class="dropdown-toggle" data-dd-target="first" aria-label="Открыть выпадающее меню">Dropdown button 1</button>
-			<div class="dropdown-menu" data-dd-path="first">
-				<a class="dropdown-menu__link" href="#1">Link 1</a>
-				<a class="dropdown-menu__link" href="#2">Link 2</a>
-				<a class="dropdown-menu__link" href="#3">Link 3</a>
-			</div>
-		</div>
+      <div class="dropdown">
+        <button class="dropdown-toggle" data-dd-target="two" aria-label="Открыть выпадающее меню">
+          Dropdown button 2
+        </button>
+        <ul class="dropdown-menu" data-dd-path="two">
+          <li>
+            <a href="#1" class="dropdown-menu__item">Link 1</a>
+          </li>
+          <li>
+            <a href="#2" class="dropdown-menu__item">Link 2</a>
+          </li>
+          <li>
+            <a href="#3" class="dropdown-menu__item">Link 3</a>
+          </li>
+        </ul>
+      </div>
 
-			<button class="dropdown-toggle" data-dd-target="two" aria-label="Открыть выпадающее меню">Dropdown button 2</button>
-			<div class="dropdown-menu" data-dd-path="two">
-				<a class="dropdown-menu__link" href="#1">Link 1</a>
-				<a class="dropdown-menu__link" href="#2">Link 2</a>
-				<a class="dropdown-menu__link" href="#3">Link 3</a>
-				<a class="dropdown-menu__link" href="#4">Link 4</a>
-				<a class="dropdown-menu__link" href="#5">Link 5</a>
-				<a class="dropdown-menu__link" href="#6">Link 6</a>
-				<a class="dropdown-menu__link" href="#7">Link 7</a>
-				<a class="dropdown-menu__link" href="#8">Link 8</a>
-				<a class="dropdown-menu__link" href="#9">Link 9</a>
-			</div>
-
-		<div class="dropdown">
-			<button class="dropdown-toggle" data-dd-target="3" aria-label="Открыть выпадающее меню">Dropdown button 3</button>
-			<div class="dropdown-menu" data-dd-path="3">
-				<a class="dropdown-menu__link" href="#1">Link 1</a>
-				<a class="dropdown-menu__link" href="#2">Link 2</a>
-				<a class="dropdown-menu__link" href="#3">Link 3</a>
-			</div>
-		</div>
-		<div class="dropdown">
-			<button class="dropdown-toggle" data-dd-target="4" aria-label="Открыть выпадающее меню">Dropdown button 4</button>
-			<div class="dropdown-menu" data-dd-path="4">
-				<a class="dropdown-menu__link" href="#1">Link 1</a>
-				<a class="dropdown-menu__link" href="#2">Link 2</a>
-				<a class="dropdown-menu__link" href="#3">Link 3</a>
-				<a class="dropdown-menu__link" href="#4">Link 4</a>
-				<a class="dropdown-menu__link" href="#5">Link 5</a>
-				<a class="dropdown-menu__link" href="#6">Link 6</a>
-				<a class="dropdown-menu__link" href="#7">Link 7</a>
-				<a class="dropdown-menu__link" href="#8">Link 8</a>
-				<a class="dropdown-menu__link" href="#9">Link 9</a>
-			</div>
-		</div>
-	</div>
-</body>
-
+      <div class="dropdown">
+        <button class="dropdown-toggle" data-dd-target="3" aria-label="Открыть выпадающее меню">
+          Dropdown button 3
+        </button>
+        <ul class="dropdown-menu" data-dd-path="3">
+          <li>
+            <a href="#1" class="dropdown-menu__item">Link 1</a>
+          </li>
+          <li>
+            <a href="#2" class="dropdown-menu__item">Link 2</a>
+          </li>
+          <li>
+            <a href="#3" class="dropdown-menu__item">Link 3</a>
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-toggle" data-dd-target="4" aria-label="Открыть выпадающее меню">
+          Dropdown button 4
+        </button>
+        <ul class="dropdown-menu" data-dd-path="4">
+          <li>
+            <a href="#1" class="dropdown-menu__item">Link 1</a>
+          </li>
+          <li>
+            <a href="#2" class="dropdown-menu__item">Link 2</a>
+          </li>
+          <li>
+            <a href="#3" class="dropdown-menu__item">Link 3</a>
+          </li>
+          <li>
+            <a href="#4" class="dropdown-menu__item">Link 4</a>
+          </li>
+          <li>
+            <a href="#5" class="dropdown-menu__item">Link 5</a>
+          </li>
+          <li>
+            <a href="#6" class="dropdown-menu__item">Link 6</a>
+          </li>
+          <li>
+            <a href="#7" class="dropdown-menu__item">Link 7</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
 </html>
